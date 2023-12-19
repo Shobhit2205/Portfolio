@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shobhit-Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fa5b30ca67.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer and Programmer</p>
+                <h1>Hi, I'm <span>Shobhit</span><br>Pandey from India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------About-----------  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I'm Shobhit Pandey, a computer science undergraduate specializing in Artificial Intelligence at NSUT. I am passionate about development and thrive on solving complex problems. Proficient in the MERN stack for both frontend and backend web development, I also leverage my expertise in C++ to tackle Data Structures and Algorithm challenges. I am enthusiastic about exploring the intersection of technology and innovation to create meaningful solutions.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('skills')">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Full stack Web development : MERN stack</li>
+                            <li><span>Languages</span><br>C++(proficient), Python(Intermediate)</li>
+                            <li><span>Core Subjects</span><br>DSA, DBMS, Operating system, OOPS conecpts</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech</span><br>Netaji Subhas University of Technology (NSUT) New Delhi, India<br>2020-2024</li>
+                            <li><span>12th</span><br>Bengali senior secondary school, New Delhi<br>2019</li>
+                            <li><span>10th</span><br>Bengali senior secondary school, New Delhi<br>2017</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------Projects------------ -->
+    <div id="work">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Leetcode</h2>
+                    <p>Solved more than 700 questions on Leetcode</p>
+                    <a href="https://leetcode.com/Shobhit2205/" target="_blank">see profile</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <h2>LinkedIn</h2>
+                    <p>Let's Connect on LinkidIn</p>
+                    <a href="https://www.linkedin.com/in/shobhit2205/" target="_blank">connect</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-github"></i>
+                    <h2>Github</h2>
+                    <p>See my work on Github</p>
+                    <a href="https://github.com/Shobhit2205" target="_blank">see profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------Portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Mental health prediction</h3>
+                        <p>Developed and implemented a project to predict the mental health of individuals using various machine learning models including KNN, Decision tree, logistic regression, and random forest.</p>
+                        <a href="https://github.com/Shobhit2205/Mental_health_prediction" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>News Website</h3>
+                        <p>Built a dynamic React website for real-time news updates across categories like Business, Technology, Sports, and Science. Improved functionality with JavaScript and integrated APIs for up-to-date content display</p>
+                        <a href="https://github.com/Shobhit2205/News_Website" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>E-commerce website</h3>
+                        <p>Crafted a visually appealing online store using frontend web development techniques, showcasing proficiency in JavaScript framework, HTML, and CSS. The result is a seamless user interface that combines functionality and aesthetics for an attractive online shopping experience</p>
+                        <a href="https://shobhit2205.github.io/Ecommerce-Website/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Shobhit2205" target="_blank" class="btn">See More</a>
+    </div>
+
+    <!-- ------------Contact------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> shobhitpandey2205@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 8287711504</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/shobhit2205/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/shobhit.pandey.315865" target="_blank"><i class="fa-brands fa-facebook"></i></a>   
+                        <a href="https://www.instagram.com/shobhit_2205/" target="_blank"><i class="fa-brands fa-instagram"></i></a>  
+                        <a href="https://twitter.com/Shobhit_2205" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    </div>
+                    <a href="images/shobhit pandey Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Shobhit Pandey. Made with <i class="fa-solid fa-heart"></i> by Shobhit Pandey</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzZfy1FTOy-xaB3sTwgzIxlK5WBb9zfg4WMahr8d_5neb_FCBdmsJkSaWbnMlmt4IJg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully";
+                setTimeout(()=>{
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
